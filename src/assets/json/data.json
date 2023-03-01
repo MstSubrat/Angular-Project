@@ -1,0 +1,65 @@
+[
+    {
+        "A2A": "BI Applications",
+        "All_India_Backdated_AWB_Query": "BLUE CONNECT",
+        "AwbImage": "Blue Dart Central Apps",
+        "BDA_APPS": "Blue Line -Visibility & Tracking",
+        "BDCM": "BRMS"
+    },
+    {
+        "A2A": "BRMS Reports",
+        "All_India_Backdated_AWB_Query": "C2NG-Prod",
+        "AwbImage": "C2NG-ProdPilot",
+        "BDA_APPS": "C2NG-UAT",
+        "BDCM": "C2PC"
+    },
+    {
+        "A2A": "C2PC UAT",
+        "All_India_Backdated_AWB_Query": "Central OPS Dashboard",
+        "AwbImage": "CMM",
+        "BDA_APPS": "CNA Module",
+        "BDCM": "COF module"
+    },
+    {
+        "A2A": "Daily N ews",
+        "All_India_Backdated_AWB_Query": "DHLBdapps",
+        "AwbImage": "DR BRMS <Disabled>",
+        "BDA_APPS": "eSAFF",
+        "BDCM": "ESP / ISO Manual"
+    },
+    {
+        "A2A": "ETAIL Dashboard",
+        "All_India_Backdated_AWB_Query": "e-Waybill",
+        "AwbImage": "FIRST CHOICE <Disabled>",
+        "BDA_APPS": "HR Manuals",
+        "BDCM": "HTTPS a2a"
+    },
+    {
+        "A2A": "ICICI GPS Vehicle Tracking",
+        "All_India_Backdated_AWB_Query": "Inbound Control Approval",
+        "AwbImage": "It Support Desk",
+        "BDA_APPS": "KAM",
+        "BDCM": "LD BOARD 021/025"
+    },
+    {
+        "A2A": "Mobile # queries",
+        "All_India_Backdated_AWB_Query": "OHIM",
+        "AwbImage": "PDA Billing",
+        "BDA_APPS": "Pride",
+        "BDCM": "RateCalc"
+    },
+    {
+        "A2A": "RTO satus",
+        "All_India_Backdated_AWB_Query": "Self Service Password recovery",
+        "AwbImage": "SWIFT",
+        "BDA_APPS": "SwiftDocs",
+        "BDCM": "Ticket Monitoring"
+    },
+    {
+        "A2A": "UAT A2A",
+        "All_India_Backdated_AWB_Query": "UAT Central Apps",
+        "AwbImage": "UAT Website",
+        "BDA_APPS": "WEBADMIN",
+        "BDCM": "--"
+    }
+]

@@ -1,0 +1,12 @@
+h2{
+    text-align: center;
+    color: red;
+}
+Section{
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px 48px;
+}
+.container{
+    text-align: center;
+}

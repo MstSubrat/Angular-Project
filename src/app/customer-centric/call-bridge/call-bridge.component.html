@@ -1,0 +1,44 @@
+<h2 style="color: blue; text-align: center;">CALL BRIDGE: INPUT PARAMETERS</h2>
+<section style="border: 1px solid black; border-radius: 8px; padding: 10px 25px;">
+    <form>
+        <div class="row mb-3">
+            <label class="col-md-3 col-form-label">REPORT OPTION:</label>
+            <div class="col-md-9">
+                <select class="form-select" formControlName="rprtOption">
+                    <option>Customer</option>
+                    <option>Devlp.Empl</option>
+                    <option>Way bill query</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label class="col-md-3 col-form-label">REPORT MONTH:</label>
+            <div class="col-md-9">
+                <select class="form-control form-select" formControlName="reportMonth">
+                    <option value="new Date()" selected></option>
+                    <option></option>
+                    <option></option>
+                </select>
+            </div>
+
+        </div>
+        <div class="row mb-3">
+            <label class="col-md-3 col-form-label">CUSTOMER GROUP:</label>
+            <div class="col-md-9">
+                <input type="text" class="form-control" formControlName="customerGrp">
+            </div>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-9">
+                <input type="text" class="form-control" formControlName="search">
+            </div>
+            <div class="col-md">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+            <p>Data is available for two months</p>
+        </div>
+        <div style="text-align: center;">
+            <button type="submit" class="btn btn-primary">Continue</button>
+        </div>
+    </form>
+</section>

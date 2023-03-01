@@ -1,0 +1,43 @@
+/* .container{
+    text-align: center;
+}
+.container,h1{
+    color: blue;
+}
+.card-body{
+    border: 1px solid rgb(0, 0, 1);
+    border-radius: 5px;
+}
+label{
+    margin-right: 13px;
+}
+button{
+    border: 1px solid black;
+}
+.dropdown {
+    display: inline-block;
+    margin-left: 5px;
+}
+.row{
+    margin: 12px 15px;
+}
+#inputField{
+    border: 1px solid black;
+}
+select{
+    margin-bottom: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+}  
+.align{
+    display:inline-block;
+}*/
+section{
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 500px;
+}
+
+.button{
+    text-align: center;
+}

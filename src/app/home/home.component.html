@@ -1,0 +1,39 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="A2A">
+        <th mat-header-cell *matHeaderCellDef>A2A
+        </th>
+        <td mat-cell *matCellDef="let element"> <a routerLink to="/">{{element.A2A}}</a> </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="All_India_Backdated_AWB_Query">
+        <th mat-header-cell *matHeaderCellDef> All India Backdated AWB Query </th>
+        <td mat-cell *matCellDef="let element"> <a routerLink to="/">{{element.All_India_Backdated_AWB_Query}}</a> </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="AwbImage">
+        <th mat-header-cell *matHeaderCellDef> AwbImage </th>
+        <td mat-cell *matCellDef="let element"> <a routerLink to="/">{{element.AwbImage}}</a> </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="BDA_APPS">
+        <th mat-header-cell *matHeaderCellDef> BDA APPS </th>
+        <td mat-cell *matCellDef="let element"> <a routerLink to="/">{{element.BDA_APPS}}</a> </td>
+    </ng-container>
+
+    <ng-container matColumnDef="BDCM">
+        <th mat-header-cell *matHeaderCellDef> BDCM </th>
+        <td mat-cell *matCellDef="let element"> <a routerLink to="/">{{element.BDCM}}</a> </td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

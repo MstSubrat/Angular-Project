@@ -1,0 +1,87 @@
+<form [formGroup]="capxForm" class="form-container" #capxData="ngForm" (ngSubmit)="onSubmit(capxData.value)">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Capx Report</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="row">
+                <div class="col-md-12">
+                    <mat-form-field class="report" appearance="fill">
+                        <mat-label>Report Type</mat-label>
+                        <mat-select formControlName="reportTyp" ngModel>
+                            <mat-option value="Loc wise ib/ob details">Loc wise ib/ob details</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <mat-form-field class="report" appearance="fill">
+                        <mat-label>Product Type</mat-label>
+                        <mat-select formControlName="productTyp" ngModel multiple>
+                            <mat-option value="SFC TOTAL">SFC TOTAL</mat-option>
+                            <mat-option value="INTL TOTAL">INTL TOTAL</mat-option>
+                            <mat-option value="APEX PURE">APEX PURE</mat-option>
+                            <mat-option value="APEX COD">APEX COD</mat-option>
+                            <mat-option value="APEX DARTPLUS">APEX DARTPLUS</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 top-padding">
+                    <mat-form-field class="full-width" appearance="fill">
+                        <input formControlName="fromMonth" matInput placeholder="Month year:From" ngModel>
+                        <mat-hint>MM/YYYY</mat-hint>
+                    </mat-form-field>
+                </div>
+                <div class="col-md-6 top-padding">
+                    <mat-form-field class="full-width" appearance="fill">
+                        <input formControlName="toMonth" matInput placeholder="Month year:To" ngModel>
+                        <mat-hint>MM/YYYY</mat-hint>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 top-padding">
+                    <mat-form-field appearance="fill">
+                        <mat-label>I/B,O/B,Transit</mat-label>
+                        <mat-select formControlName="transit" ngModel>
+                            <mat-option value="All">All</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="col-md-6 top-padding">
+
+                    <mat-form-field appearance="fill">
+                        <mat-label>location Type</mat-label>
+                        <mat-select formControlName="location" ngModel>
+                            <mat-option value="Region">Region</mat-option>
+                            <mat-option value="location">location</mat-option>
+                            <mat-option value="Area">Area</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <mat-form-field class="report" appearance="fill">
+                        <mat-label>Regions</mat-label>
+                        <mat-select formControlName="regions" ngModel multiple>
+                            <mat-option value="EAST">EAST</mat-option>
+                            <mat-option value="NORTH">NORTH</mat-option>
+                            <mat-option value="SOUTH1">SOUTH1</mat-option>
+                            <mat-option value="SOUTH2">SOUTH2</mat-option>
+                            <mat-option value="WEST1">WEST1</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+        </mat-card-content>
+        <mat-card-actions class="align">
+            <button (click)="getReport()" mat-raised-button color="primary">Get Report</button>
+        </mat-card-actions>
+    </mat-card>
+</form>

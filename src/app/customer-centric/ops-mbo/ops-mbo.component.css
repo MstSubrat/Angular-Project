@@ -1,0 +1,21 @@
+.container{
+    text-align: center;
+    color: blue;
+}
+.card-body{
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.row{
+    margin: 12px 13px;
+}
+label{
+    margin-right: 13px;
+}
+button{
+    border: 1px solid black;
+}
+#datepicker{
+    border: 1px solid black;
+    border-radius: 3px;
+}

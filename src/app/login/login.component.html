@@ -1,0 +1,29 @@
+<mat-card>
+    <mat-card-title>User Login</mat-card-title>
+    <mat-card-content>
+
+        <form class="example-form" (ngSubmit)="userLogin()">
+            <mat-form-field class="example-full-width">
+                <mat-label>Username</mat-label>
+                <input matInput placeholder="Username" required name="userName" [(ngModel)]="user.userName">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="Password" required type="password" name="password" [(ngModel)]="user.password">
+            </mat-form-field>
+
+            <div>
+
+
+
+                <button mat-raised-button color="primary" type="submit">Login</button>
+                <!-- <a class="ml10" routerLink="register" mat-raised-button color="accent"
+                    (click)="RedirectRegister()">Register</a> -->
+
+            </div>
+        </form>
+
+
+    </mat-card-content>
+</mat-card>

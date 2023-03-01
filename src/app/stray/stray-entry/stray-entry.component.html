@@ -1,0 +1,73 @@
+<h2>STRAY ENTRY</h2>
+<section class="my-2">
+    <form [formGroup]="strayEntry">
+        <div class="row mb-3">
+            <label for="inputDate" class="col-md-3 col-form-label">Stray Date</label>
+            <div class="col-md-9">
+                <input type="date" name="date" formControlName="strayDate">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputLoc" class="col-md-3 col-form-label">Stray LOC</label>
+            <div class="col-md-9">
+                <input type="text" name="loc" formControlName="strayLoc">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="formFile" class="col-md-3 col-form-label">Upload Image</label>
+            <div class="col-md-9">
+                <input class="form-control" type="file" id="formFile" formControlName="image">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputDesc" class="col-md-3 col-form-label">Pack Desc</label>
+            <div class="col-md-9">
+                <textarea name="desc" id="" cols="50" rows="5" formControlName="packDesc"></textarea>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputVehicleNo" class="col-md-3 col-form-label">Vehicle No.</label>
+            <div class="col-md-9">
+                <input type="text" name="vehicleNo" formControlName="vehicleNo">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputVehicleOrigin" class="col-md-3 col-form-label">Vehicle Origin</label>
+            <div class="col-md-9">
+                <input type="text" name="vehicleOrigin" formControlName="vehicleOrigin">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputRoute" class="col-md-3 col-form-label">Route</label>
+            <div class="col-md-9">
+                <input type="text" name="route" formControlName="route">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputCommodity" class="col-md-3 col-form-label">Commodity</label>
+            <div class="col-md-9">
+                <input type="text" name="commodity" formControlName="commodity">
+            </div>
+        </div>
+        <div class="container">
+            <button (click)="onSubmit()" type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</section>
+
+<h2>SELECT FILE TO UPLOAD</h2>
+<section class="my-2">
+    <form class="form-container" id="fileUpload">
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="formFile" class="form-label">Upload Image</label>
+            </div>
+            <div class="col-auto">
+                <input class="form-control" type="file" id="formFile" formControlName="image2">
+            </div>
+        </div>
+        <div class="container my-2">
+            <button type="submit" (click)="uploadImg()" name="submit" class="btn btn-primary">Upload</button>
+        </div>
+    </form>
+</section>

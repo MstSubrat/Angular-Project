@@ -1,0 +1,13 @@
+{
+  "capx": [
+    {
+      "reportTyp": "Loc wise ib/ob details",
+      "productTyp": ["SFC TOTAL","INTL TOTAL","APEX PURE","APEX COD","APEX DARTPLUS"],
+      "fromMonth": "new Date()",
+      "toMonth": "new Date()",
+      "transit":"All",
+      "location":["Region","Location","Area"],
+      "regions":["EAST","NORTH","SOUTH1","SOUTH2","WEST1"]
+    }
+  ]
+}

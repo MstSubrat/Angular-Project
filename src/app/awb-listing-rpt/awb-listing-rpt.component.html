@@ -1,0 +1,62 @@
+<form [formGroup]="awbReprtForm" class="form-container">
+    <mat-card>
+        <mat-card-header class="padding">
+            <mat-card-title>ALTERNATE INSTRUCTION: AWB LISTING</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="row">
+                <div class="col-md-12">
+                    <mat-form-field class="width" appearance="fill">
+                        <mat-label>Alternate Instruction Type</mat-label>
+                        <mat-select formControlName="altReprtType">
+                            <mat-option value="rto compusory">rto compusory</mat-option>
+                            <mat-option value="code to prepaid">code to prepaid</mat-option>
+                            <mat-option value="dba">dba</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <mat-form-field class="full-width">
+                        <input formControlName="groupCode" matInput placeholder="Group Code" maxlength="6">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 top-padding">
+                    <mat-form-field class="full-width" appearance="fill">
+                        <mat-label>From Date</mat-label>
+                        <input formControlName="fromDate" matInput [matDatepicker]="picker1">
+                        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                        <mat-datepicker #picker1></mat-datepicker>
+                    </mat-form-field>
+                </div>
+                <div class="col-md-6 top-padding">
+                    <mat-form-field class="full-width" appearance="fill">
+                        <mat-label>To Date</mat-label>
+                        <input formControlName="toDate" matInput [matDatepicker]="picker2">
+                        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                        <mat-datepicker #picker2></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <mat-form-field class="width" appearance="fill">
+                        <mat-label>Satus</mat-label>
+                        <mat-select formControlName="status">
+                            <mat-option value="All">All</mat-option>
+                            <mat-option value="rto">rto</mat-option>
+                            <mat-option value="delivered">delivered</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+        </mat-card-content>
+        <div class="container">
+            <button (click)="generateRprt()" mat-raised-button color="primary">Gerete Report</button>
+        </div>
+
+    </mat-card>
+</form>

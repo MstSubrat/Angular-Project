@@ -1,0 +1,74 @@
+<h2>Download CSV</h2>
+<section class="my-2">
+    <form [formGroup]="downloadCsv">
+        <div class="row mb-3">
+            <label for="inputDate" class="col-md-4 col-form-label">Stray Date</label>
+            <div class="col-md-8">
+                <input type="date" name="dateFrom" formControlName="strayDateFrom">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputDate2" class="col-md-4 col-form-label">To</label>
+            <div class="col-md-8">
+                <input type="date" name="dateTo" formControlName="strayDateTo">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="formFile" class="col-md-4 col-form-label">Region</label>
+            <div class="col-md-8">
+                <select class="form-select-md" formControlName="region">
+                    <option selected>All</option>
+                    <option>WEST1</option>
+                    <option>WEST2</option>
+                    <option>SOUTH1</option>
+                    <option>SOUTH2</option>
+                    <option>EAST</option>
+                    <option>NORTH</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputLoc" class="col-md-4 col-form-label">Stray LOC</label>
+            <div class="col-md-8">
+                <input type="text" name="loc" formControlName="strayLoc">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="formFile2" class="col-md-4 col-form-label">Status</label>
+            <div class="col-md-8">
+                <select class="form-select-md" formControlName="status">
+                    <option>Closed</option>
+                    <option>Open</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputVehicleNo" class="col-md-4 col-form-label">Vehicle No.</label>
+            <div class="col-md-8">
+                <input type="text" name="vehicleNo" formControlName="vehicleNo">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputVehicleOrigin" class="col-md-4 col-form-label">Vehicle Origin</label>
+            <div class="col-md-8">
+                <input type="text" name="vehicleOrigin" formControlName="vehicleOrigin">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputRoute" class="col-md-4 col-form-label">Route</label>
+            <div class="col-md-8">
+                <input type="text" name="route" formControlName="route">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputCommodity" class="col-md-4 col-form-label">Commodity</label>
+            <div class="col-md-8">
+                <input type="text" name="commodity" formControlName="commodity">
+            </div>
+        </div>
+        <div class="container">
+            <button (click)="onSubmit()" type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</section>
+

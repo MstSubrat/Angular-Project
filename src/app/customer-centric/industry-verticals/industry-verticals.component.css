@@ -1,0 +1,12 @@
+section{
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 500px;
+}
+.button{
+    text-align: center;
+}
+select{
+    border: 1px solid black;
+    border-radius: 4px;
+}

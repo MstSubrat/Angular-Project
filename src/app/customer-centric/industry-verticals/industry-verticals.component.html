@@ -1,0 +1,105 @@
+<h2 style="color:blue; text-align: center;">CUSTOMERS VARIANCE REPORT : INPUT PRAMETERS</h2>
+<section class="container my-2 p-4">
+    <form class="row g-3">
+        <div class="col-md-6">
+            <label for="inputSelect" class="form-label">PRODUCT</label>
+            <select class="form-select form-select-sm" formControlName="product">
+                <option selected>All Product</option>
+                <option>Domestic priority</option>
+                <option>ApexB2B</option>
+                <option>ApexB2C</option>
+                <option>Dart Plus</option>
+                <option>SFC B2B</option>
+                <option>SFC B2C</option>
+                <option>Intl.Outbound</option>
+                <option>Import Express</option>
+                <option>ATA</option>
+                <option>Interline</option>
+                <option>Coloader</option>
+                <option>RegnlPriority</option>
+                <option>RegnlDaerApex</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label for="inputSelect2" class="form-label">GEOAGRAPHY</label>
+            <select class="form-select form-select-sm" formControlName="geography">
+                <option selected>ALLCO Total</option>
+                <option>ALLCO Total (with Regn Breakup)</option>
+                <option>EAST</option>
+                <option>NORTH</option>
+                <option>HO</option>
+                <option>WEST1</option>
+                <option>WEST2</option>
+                <option>SOUTH1</option>
+                <option>SOUTH2</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label for="inputSelect3" class="form-label">EVALUATION PERIOD</label>
+            <input type="month" name="fromMonth" formControlName="fromMonth" value="2022-11" />
+            <p>(From Month)</p>
+        </div>
+
+        <div class="col-md-6">
+            <label for="inputSelect4" class="form-label">EVALUATION PERIOD</label>
+            <input type="month" name="toMonth" formControlName="toMonth" value="2022-11">
+            <p>(To Month)</p>
+        </div>
+        <div class="col-md-6">
+            <label for="inputSelect5" class="form-label">COMPARED AGAINST</label>
+            <input type="month" name="cFromMonth" formControlName="cFromMonth" value="2022-11">
+            <p>(From Month)</p>
+        </div>
+        <div class="col-md-6">
+            <label for="inputSelect6" class="form-label">COMPARED AGAINST</label>
+            <input type="month" name="cFromMonth" formControlName="cToMonth" value="2022-11">
+            <p>(To Month)</p>
+        </div>
+        <div class="col-md-6">
+            <label for="inputSelect7" class="form-label">SEGMENT TYPE</label>
+            <select class="form-select form-select-sm" formControlName="segmentTyp">
+                <option selected>Revenue</option>
+                <option>Industry</option>
+                <option>Market</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label for="inputSelect8" class="form-label">DATA MEASURE</label>
+            <select class="form-select form-select-sm" formControlName="dataMeasure">
+                <option selected>Total</option>
+                <option>Avg Per Month</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label for="inputSelect10" class="form-label">EVALUATE USING</label>
+            <select class="form-select form-select-sm" formControlName="evaluate">
+                <option selected>Total</option>
+                <option>WEST2</option>
+                <option>SOUTH1</option>
+                <option>SOUTH2</option>
+                <option>NORTH</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label for="inputSelect11" class="form-label">WITH FS(Y/N)</label>
+            <select class="form-select form-select-sm" formControlName="withFs">
+                <option selected>Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+
+        <div class="col-md-6">
+            <label for="inputSelect11" class="form-label">CASH/CREDIT</label>
+            <select class="form-select form-select-sm" formControlName="cashOrCredit">
+                <option selected>Total</option>
+                <option>Cash</option>
+                <option>Credit</option>
+            </select>
+        </div>
+
+
+        <div class="button">
+            <button type="submit" class="btn btn-primary">Continue</button>
+        </div>
+    </form>
+</section>

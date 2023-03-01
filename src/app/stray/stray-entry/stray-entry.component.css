@@ -1,0 +1,19 @@
+h2{
+    text-align: center;
+    color: red;
+}
+section{
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px 48px;
+}
+input{
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.container{
+    text-align: center;
+}
+#fileUpload{
+    margin-top: 50px;
+}

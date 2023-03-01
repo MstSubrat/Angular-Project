@@ -1,0 +1,115 @@
+<h2>Query</h2>
+<section class="my-2">
+    <form [formGroup]="strayQuery">
+        <div class="row mb-3">
+            <label for="inputStray" class="col-md-3 col-form-label">Stray #s</label>
+            <div class="col-md-9">
+                <textarea name="desc" id="desc" cols="50" rows="5" formControlName="strayS"></textarea>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputDate" class="col-md-3 col-form-label">Stray Date</label>
+            <div class="col-md-9">
+                <input type="date" name="dateFrom" formControlName="strayDateFrom">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputDate2" class="col-md-3 col-form-label">To</label>
+            <div class="col-md-9">
+                <input type="date" name="dateTo" formControlName="strayDateTo">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="formFile" class="col-md-3 col-form-label">Region</label>
+            <div class="col-md-9">
+                <select class="form-select-md" formControlName="region">
+                    <option selected>All</option>
+                    <option>WEST1</option>
+                    <option>WEST2</option>
+                    <option>SOUTH1</option>
+                    <option>SOUTH2</option>
+                    <option>EAST</option>
+                    <option>NORTH</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputLoc" class="col-md-3 col-form-label">Stray LOC</label>
+            <div class="col-md-9">
+                <input type="text" name="loc" formControlName="strayLoc">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="formFile2" class="col-md-3 col-form-label">Status</label>
+            <div class="col-md-9">
+                <select class="form-select-md" formControlName="status">
+                    <option>Closed</option>
+                    <option>Open</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputVehicleNo" class="col-md-3 col-form-label">Vehicle No.</label>
+            <div class="col-md-9">
+                <input type="text" name="vehicleNo" formControlName="vehicleNo">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputVehicleOrigin" class="col-md-3 col-form-label">Vehicle Origin</label>
+            <div class="col-md-9">
+                <input type="text" name="vehicleOrigin" formControlName="vehicleOrigin">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputRoute" class="col-md-3 col-form-label">Route</label>
+            <div class="col-md-9">
+                <input type="text" name="route" formControlName="route">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputCommodity" class="col-md-3 col-form-label">Commodity</label>
+            <div class="col-md-9">
+                <input type="text" name="commodity" formControlName="commodity">
+            </div>
+        </div>
+        <div class="container">
+            <button (click)="onSubmit()" type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</section>
+
+<h2>Stray Mass Update</h2>
+<section class="my-2">
+    <form>
+        <div class="row mb-3">
+            <label for="inputLoc" class="col-md-3 col-form-label">Stray LOC</label>
+            <div class="col-md-9">
+                <input type="text" name="mLoc" formControlName="mStrayLoc">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputAwb" class="col-md-3 col-form-label">Awb No</label>
+            <div class="col-md-9">
+                <input type="text" name="awb" formControlName="awbNo">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="formFile3" class="col-md-3 col-form-label">Status</label>
+            <div class="col-md-9">
+                <select class="form-select-md" formControlName="mStatus">
+                    <option>Closed</option>
+                    <option>Open</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputRemark" class="col-md-3 col-form-label">Remarks</label>
+            <div class="col-md-9">
+                <textarea name="remark" id="desc" cols="50" rows="5" formControlName="remarks"></textarea>
+            </div>
+        </div>
+        <div class="container">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</section>
